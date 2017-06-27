@@ -1,5 +1,5 @@
 /*
- * Program for reading HYT digital humidity & temperature sensors TSic206, TSic306 and TSic506
+ * Program for reading HYT digital humidity & temperature sensors HYT-271 / HYT-221 / HYT-939
  * using Silicon Labs' EFM32ZG-STK3200 kit
  *
  * Whether the button is pressed, we receive temrerature and humidity data from the sensor.
@@ -74,7 +74,7 @@ int8_t performDFCommand(void) {
 	if (tempRawData != 0 && humididtyRawData != 0 && tempRawData < 0x3FFF
 			&& humididtyRawData < 0x3FFF) {
 		if (sensorStateBit != 1) {
-			/* temperature as 14bit-value in the range from -40°C to +125°C */
+			/* temperature as 14bit-value in the range from -40Â°C to +125Â°C */
 			temperature = ((float) (tempRawData) * 165.0F / 16383.0F) - 40.0F;
 			/* humidity as 14bit-value in the range from 0%rH to 100%rH */
 			humidity = (float) humididtyRawData * 100.0F / 16383.0F;
