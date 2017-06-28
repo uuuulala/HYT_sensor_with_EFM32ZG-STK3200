@@ -7,6 +7,10 @@ Every time the button #1 is pressed we receive temperature and humidity data fro
 
 The code isn't optimized for low energy consuption as any EFM32 programm could be.
 
+![gif](https://media.giphy.com/media/RDYxxGEi6f4SQ/giphy.gif)
+
+![wellcome screen](http://i.imgur.com/VGCd4PY.jpg) ![normal screen](http://i.imgur.com/CHwuMoh.jpg) ![error screen](http://i.imgur.com/CBgmkUM.jpg)
+
 ## Connecting the sensor
 
 HYT sensors use SDA, SCL, VDD and GND pins to be connected. We use EFM32 integrated pull-up resisrors so no additional components are needed.
