@@ -3,6 +3,8 @@
 HYT-939 digital humidity & temperature sensor reading with EFM32ZG-STK3200 board.
 Can be used for HYT-271 and HYT-221 sensors without any changes. 
 
+![3 types of HYT sensor](http://i.imgur.com/esmIGBk.png)
+
 Every time the button #1 is pressed we receive temperature and humidity data from the sensor and update information at the display.
 
 The code isn't optimized for low energy consuption as any EFM32 programm could be.
